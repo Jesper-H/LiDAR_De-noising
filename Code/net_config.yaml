@@ -1,0 +1,25 @@
+generator:
+    lr: 0.001
+
+discriminator:
+    lr: 0.001
+
+data_loader:
+  train: ['11','12','13','14','15','16','17','18','20','22','23','24','26']
+  valid: ['11','12','13','14','15','16','17','18','20','22','23','24','26']
+  test: ['30','34','35','36','76']
+    
+run:
+    device: 1
+    cuda: True
+    seed: 42
+    
+train:
+    disc_loops: 2
+    batch_size: 1
+    max_epoch: 20
+    log_name: 'test'
+    checkpoint: False
+
+eval:
+    save: 410
